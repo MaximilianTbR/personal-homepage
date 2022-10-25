@@ -14,7 +14,9 @@ $bg-color-page-right: #181823;
 
 .header-right {
     width: 70%;
-    background-color: black;
+    height: 600px;
+    position: absolute;
+    right: 0px;
 }
 
 .first-section-img {
@@ -30,6 +32,14 @@ $bg-color-page-right: #181823;
 }
 
 .first-section-headline {
-    font-family: 'PT Sans';
-    font-size: large;
+    font-family: 'PT Sans', sans-serif;
+    top: 3rem;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    h1 {
+        font-size: 63px;
+        margin-bottom: 0px;
+        width: fit-content;
+    }
 }
