@@ -1,15 +1,15 @@
 $bg-color-page-right: #181823;
 .header-div {
     width: 100vw;
-    height: 700px;
+    height: 650px;
     display: flex;
 }
 
 .header-left {
-    width: 30%;
+    width: 26%;
     background-color: black;
     padding-left: 72px;
-    height: 690px;
+    height: 735px;
     padding-top: 10px;
 }
 
@@ -18,7 +18,7 @@ $bg-color-page-right: #181823;
     width: 70%;
     background-color: $bg-color-page-right;
     display: flex;
-    height: 700px;
+    height: 745px;
     justify-content: end;
     align-items: start;
 }

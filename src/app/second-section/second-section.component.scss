@@ -1,0 +1,80 @@
+.second-section-div {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: calc(100% - 61px);
+    height: fit-content;
+    margin-top: 95px;
+    padding-left: 76px;
+    height: 700px;
+}
+
+.second-section-inner-div {
+    width: fit-content;
+    height: fit-content;
+}
+
+.second-section-subheader {
+    color: white;
+    font-family: 'PT Sans';
+    font-weight: 800;
+}
+
+.second-section-header {
+    color: white;
+    font-family: 'PT Sans';
+    font-size: 76px;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.second-section-div-2 {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 61px);
+    padding-left: 76px;
+    height: fit-content;
+}
+
+.second-section-references-div {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'PT Sans';
+    width: 94vw;
+}
+
+.second-section-single-reference {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.second-section-single-reference-number {
+    font-size: 100px;
+    color: #8491A0;
+}
+
+.second-section-single-reference-company {
+    display: flex;
+    align-items: center;
+    height: 15px;
+}
+
+.dribbble-color {
+    color: #E95D90;
+}
+
+.facebook-color {
+    color: #609BFF;
+}
+
+.google-color {
+    color: #3CC74E;
+}
