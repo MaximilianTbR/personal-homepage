@@ -1,10 +1,7 @@
 $bg-color-page-right: #181823;
 .header-div {
     width: 100vw;
-    height: 100px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    height: 700px;
     display: flex;
 }
 
@@ -12,7 +9,7 @@ $bg-color-page-right: #181823;
     width: 30%;
     background-color: black;
     padding-left: 72px;
-    height: 90px;
+    height: 690px;
     padding-top: 10px;
 }
 
@@ -38,7 +35,7 @@ $bg-color-page-right: #181823;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 30rem;
 }
 
 .header-right-normal-text {
