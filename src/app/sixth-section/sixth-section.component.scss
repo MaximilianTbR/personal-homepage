@@ -1,0 +1,49 @@
+.third-section-div {
+    background-color: white;
+    height: 600px;
+    width: 100vw;
+    display: flex;
+}
+
+.third-section-left-div {
+    width: 50vw;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: START;
+    flex-direction: column;
+    padding-left: 76px;
+}
+
+.third-section-right-div {
+    width: 50vw;
+    height: 600px;
+    object-fit: cover;
+    img {
+        height: 600px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.third-section-header {
+    font-family: 'PT Sans';
+    color: black;
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.third-section-main-text {
+    color: black;
+    font-family: 'PT Sans';
+    font-size: 18px;
+}
+
+.third-section-btn {
+    color: black;
+    font-size: 18px;
+    font-family: 'PT Sans';
+    cursor: pointer;
+    margin-top: 125px;
+    text-decoration: underline;
+}
