@@ -1,0 +1,68 @@
+.fourth-section-div {
+    width: 100vw;
+    height: 615px;
+    background-color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.fourth-section-inner-div {
+    margin-left: 76px;
+    display: flex;
+}
+
+.fourth-section-left {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 20%;
+    height: fit-content;
+    margin-right: 100px;
+}
+
+.fourth-section-single-skill {
+    width: 450px;
+    margin-right: 50px;
+}
+
+.fourth-section-header {
+    color: white;
+    font-family: 'PT Sans';
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.fourth-section-subheader-text {
+    color: white;
+    font-family: 'PT Sans';
+    font-size: 18px;
+}
+
+.fourth-section-skill-presentation-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fourth-section-upper-skills {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.fourth-section-lower-skills {
+    display: flex;
+}
+
+.fourth-section-single-skill-header {
+    color: white;
+    font-family: 'PT Sans';
+}
+
+.fourth-section-single-skill-text {
+    color: white;
+    font-size: 18px;
+    font-family: 'PT Sans';
+}
