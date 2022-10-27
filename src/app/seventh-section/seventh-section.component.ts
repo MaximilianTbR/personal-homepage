@@ -7,9 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SeventhSectionComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit(): void {
   }
-
 }

@@ -66,6 +66,11 @@
         color: white;
         font-family: 'PT Sans';
         padding-left: 10px;
+        border: 1px solid black;
+        border-radius: 3px;
+        &:focus {
+            border: 1px solid #5221E6;
+        }
     }
     textarea {
         width: 100%;
@@ -79,6 +84,11 @@
         font-family: 'PT Sans';
         padding-left: 10px;
         padding-top: 10px;
+        border: 1px solid black;
+        border-radius: 3px;
+        &:focus {
+            border: 1px solid #5221E6;
+        }
     }
 }
 
@@ -97,4 +107,9 @@
     color: white;
     font-size: 18px;
     font-family: 'PT Sans';
+    border: 1px solid black;
+}
+
+form {
+    width: 100%;
 }
