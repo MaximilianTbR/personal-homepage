@@ -10,6 +10,7 @@ import { ThirdSectionComponent } from './third-section/third-section.component';
 import { FourthSectionComponent } from './fourth-section/fourth-section.component';
 import { FifthSectionComponent } from './fifth-section/fifth-section.component';
 import { SixthSectionComponent } from './sixth-section/sixth-section.component';
+import { SeventhSectionComponent } from './seventh-section/seventh-section.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SixthSectionComponent } from './sixth-section/sixth-section.component';
     ThirdSectionComponent,
     FourthSectionComponent,
     FifthSectionComponent,
-    SixthSectionComponent
+    SixthSectionComponent,
+    SeventhSectionComponent
   ],
   imports: [
     BrowserModule,
