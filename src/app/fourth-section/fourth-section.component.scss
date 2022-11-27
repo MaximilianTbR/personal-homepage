@@ -33,6 +33,7 @@
     font-family: 'PT Sans';
     font-size: 55px;
     margin-bottom: 25px;
+    margin-top: 10px;
 }
 
 .fourth-section-subheader-text {
@@ -66,4 +67,18 @@
     color: white;
     font-size: 18px;
     font-family: 'PT Sans';
+}
+
+.fourth-section-single-skill-img-ng {
+    img {
+        width: 59px;
+        height: 69px;
+    }
+}
+
+.fourth-section-single-skill-img-js {
+    img {
+        width: 69px;
+        height: 68px;
+    }
 }

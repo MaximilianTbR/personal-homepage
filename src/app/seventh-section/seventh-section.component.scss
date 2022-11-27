@@ -25,6 +25,7 @@
     height: fit-content;
     margin-top: 60px;
     h2 {
+        margin-top: 60px;
         font-family: 'PT Sans';
         color: white;
         font-size: 55px;
@@ -57,7 +58,7 @@
     height: fit-content;
     margin-bottom: 30px;
     input {
-        width: 100%;
+        width: calc(100% - 10px);
         height: 45px;
         background-color: #181823;
         outline: none;
@@ -73,7 +74,7 @@
         }
     }
     textarea {
-        width: 100%;
+        width: calc(100% - 10px);
         height: 135px;
         background-color: #181823;
         outline: none;
@@ -108,6 +109,7 @@
     font-size: 18px;
     font-family: 'PT Sans';
     border: 1px solid black;
+    //cursor: pointer;
 }
 
 form {
