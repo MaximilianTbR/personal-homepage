@@ -37,6 +37,7 @@
     color: black;
     font-family: 'PT Sans';
     font-size: 18px;
+    width: 90%;
 }
 
 .third-section-btn {
@@ -50,4 +51,22 @@
 
 .third-section-btn-href {
     color: black;
+}
+
+@media (max-width: 800px) {
+    .third-section-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .third-section-left-div {
+        width: calc(100vw - 100px);
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .third-section-right-div {
+        width: 100vw;
+    }
 }
