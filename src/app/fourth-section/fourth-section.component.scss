@@ -1,10 +1,12 @@
 .fourth-section-div {
-    width: 100vw;
+    width: calc(100vw - 100px);
     height: 615px;
     background-color: black;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .fourth-section-inner-div {
@@ -80,5 +82,63 @@
     img {
         width: 69px;
         height: 68px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .fourth-section-div {
+        height: 120vh;
+    }
+    .fourth-section-subheader-text {
+        width: 80vw;
+    }
+    .fourth-section-single-skill-text {
+        width: 80vw;
+    }
+    .fourth-section-inner-div {
+        flex-direction: column;
+    }
+    .fourth-section-upper-skills {
+        flex-direction: column;
+    }
+    .fourth-section-lower-skills {
+        flex-direction: column;
+        margin-top: -50px;
+    }
+    .fourth-section-skill-presentation-div {
+        align-items: start;
+        margin-top: 50px;
+    }
+    .fourth-section-single-skill {
+        width: fit-content;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    .fourth-section-single-skill-header {
+        margin-bottom: 5px
+    }
+}
+
+@media (max-width: 935px) {
+    .fourth-section-div {
+        height: 130vh !important;
+    }
+}
+
+@media (max-width: 535px) {
+    .fourth-section-div {
+        height: 140vh !important;
+    }
+}
+
+@media (max-width: 470px) {
+    .fourth-section-div {
+        height: 150vh !important;
+    }
+}
+
+@media (max-width: 370px) {
+    .fourth-section-div {
+        height: 175vh !important;
     }
 }
