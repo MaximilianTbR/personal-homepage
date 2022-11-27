@@ -101,4 +101,57 @@
     .second-section-references-div {
         flex-direction: column;
     }
+    .second-section-references-div {
+        align-items: start;
+    }
+}
+
+@media (max-width: 1650px) {
+    .second-section-single-reference-company {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        height: auto !important;
+        margin-bottom: 5px;
+        p {
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+    }
+    .comma {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 535px) {
+    .second-section-div {
+        height: 110vh;
+    }
+    .second-section-header {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 535px) {
+    .second-section-div {
+        height: 150vh !important;
+    }
+    .second-section-header {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .second-section-div {
+        height: 180vh;
+    }
+}
+
+.text-edits {
+    display: flex;
+    .comma {
+        margin-right: 5px;
+        display: auto;
+    }
 }
