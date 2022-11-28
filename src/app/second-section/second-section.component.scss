@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    width: calc(100% - 61px);
+    width: calc(100vw - 1000px);
     height: fit-content;
     padding-top: 95px;
     padding-left: 50px;
@@ -28,6 +28,8 @@
     font-size: 76px;
     font-weight: 800;
     margin-top: 15px;
+    width: 80vw;
+    margin-right: 0px;
 }
 
 .second-section-div-2 {
