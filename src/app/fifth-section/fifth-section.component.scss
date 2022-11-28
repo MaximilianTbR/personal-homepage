@@ -1,9 +1,9 @@
 .fifth-section-div {
-    width: calc(100vw - 152px);
+    width: calc(100vw - 100px);
     height: fit-content;
     background-color: black;
-    padding-left: 76px;
-    padding-right: 76px;
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,5 +122,36 @@
     img {
         width: 50px;
         height: 50px;
+    }
+}
+
+@media (max-width: 750px) {
+    .inner-div {
+        flex-direction: column;
+    }
+    .header-div {
+        width: 80vw;
+    }
+    .left-div {
+        width: 100%;
+    }
+    .right-div {
+        width: 100%;
+        margin-top: 0px;
+        align-items: start;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-div {
+        width: 60vw;
+    }
+    .header {
+        font-size: 30px;
+    }
+    .fifth-section-div {
+        padding-right: 25px;
+        padding-left: 25px;
+        width: calc(100vw - 50px);
     }
 }
