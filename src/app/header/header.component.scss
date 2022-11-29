@@ -31,13 +31,15 @@ $second-color: #181823;
     color: white;
     font-size: 40px;
     cursor: pointer;
+    padding-left: 172px;
 }
 
 .header-right-inner-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 43%;
+    padding-right: 18%;
 }
 
 .header-right-normal-text {

@@ -105,6 +105,30 @@ $bg-color-page-right: #181823;
         display: flex !important;
     }
     .both-headers {
-        height: 58vh !important;
+        height: 57vh !important;
+    }
+}
+
+@media (max-width: 730px) {
+    .both-headers {
+        height: 54vh !important;
+    }
+}
+
+@media (max-width: 670px) {
+    .both-headers {
+        height: 48vh !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .both-headers {
+        height: 44vh !important;
+    }
+}
+
+@media (max-width: 370px) {
+    .both-headers {
+        height: 48vh !important;
     }
 }
