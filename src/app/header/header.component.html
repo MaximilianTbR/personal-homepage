@@ -1,10 +1,12 @@
 <div class="header-div" id="first-section">
     <div class="header-left">
+    </div>
+    <div class="header-right">
+    </div>
+    <div class="header-bar-1">
         <div class="header-left-initials">
             M.T
         </div>
-    </div>
-    <div class="header-right">
         <div class="header-right-inner-div">
             <div class="header-right-normal-text">Experience</div>
             <div class="header-right-normal-text">Work</div>
@@ -18,5 +20,27 @@
         <div class="single-href open-menu-normal-text">Work</div>
         <div class="single-href open-menu-normal-text">Technologies</div>
         <div class="single-href open-menu-btn">Contact</div>
+    </div>
+    <div class="header-responsive d-none">
+        <div class="header-left">
+            <div class="header-left-initials">
+                M.T
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right-inner-div">
+                <div class="header-right-normal-text">Experience</div>
+                <div class="header-right-normal-text">Work</div>
+                <div class="header-right-normal-text">Technologies</div>
+                <div class="header-right-btn">Contact</div>
+                <div class="responsive-menu-btn"><img (click)="openMenu()" src="./../../assets/img/14.png"></div>
+            </div>
+        </div>
+        <div class="open-menu d-none" id="open-menu">
+            <div class="single-href open-menu-normal-text">Experience</div>
+            <div class="single-href open-menu-normal-text">Work</div>
+            <div class="single-href open-menu-normal-text">Technologies</div>
+            <div class="single-href open-menu-btn">Contact</div>
+        </div>
     </div>
 </div>
