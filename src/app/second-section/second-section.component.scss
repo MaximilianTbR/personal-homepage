@@ -2,12 +2,11 @@
     background-color: black;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
-    width: calc(100vw - 50px) !important;
+    width: calc(100vw) !important;
     height: fit-content;
     padding-top: 95px;
-    padding-left: 50px;
     height: 700px;
 }
 
@@ -16,7 +15,8 @@ a {
 }
 
 .second-section-inner-div {
-    width: fit-content;
+    width: 100%;
+    max-width: 1140px;
     height: fit-content;
 }
 
@@ -32,7 +32,8 @@ a {
     font-size: 76px;
     font-weight: 800;
     margin-top: 15px;
-    width: 80vw;
+    width: 100%;
+    max-width: 1000px;
     margin-right: 0px;
 }
 
@@ -51,16 +52,15 @@ a {
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     font-family: 'PT Sans';
-    width: 94vw;
+    width: 100%;
+    max-width: 1140px;
 }
 
 .second-section-single-reference {
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
-    margin-bottom: 25px;
 }
 
 .second-section-single-reference-number {
@@ -87,6 +87,10 @@ a {
 .google-color {
     color: #3CC74E;
     cursor: pointer;
+}
+
+.second-section-single-reference-text {
+    max-width: 300px;
 }
 
 @media (max-width: 1650px) {

@@ -5,7 +5,7 @@
             <div class="simple-text simple-text-length">Now that you know a lot about me, let me know if you are interested to work with me.</div>
         </div>
         <div class="div-right">
-            <form>
+            <form type="submit" (submit)="sendMail()" #myForm>
                 <div class="input-div">
                     <label for="name">Name</label>
                     <div class="input-title">Name</div>
@@ -13,11 +13,11 @@
                 </div>
                 <div class="input-div">
                     <div class="input-title">Email</div>
-                    <input required>
+                    <input required name="mail">
                 </div>
                 <div class="input-div">
                     <div class="input-title">Message</div>
-                    <textarea required></textarea>
+                    <textarea required name="message"></textarea>
                 </div>
                 <button type="submit" class="input-btn">LET'S GET STARTED</button>
             </form>

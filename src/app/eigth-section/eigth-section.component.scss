@@ -1,15 +1,19 @@
 .main-div {
-    width: calc(100vw - 152px);
+    width: calc(100vw - 100px);
     min-height: 248px;
     background-color: #181823;
-    padding-left: 76px;
-    padding-right: 76px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 76px;
     padding-bottom: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .inner-div {
     width: 100%;
+    max-width: 1140px;
     height: 100%;
     display: flex;
 }
@@ -24,11 +28,15 @@
 }
 
 .right-div {
-    width: 40%;
-    height: 100%;
+    width: 100%;
+    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+}
+
+.right-div-column {
+    margin-right: 15px;
 }
 
 .initals-div {
