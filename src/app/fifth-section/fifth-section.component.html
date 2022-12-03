@@ -6,11 +6,11 @@
                 <h2 class="header">Work that I've done for the past years</h2>
             </div>
             <div class="btns-div">
-                <button class="btn-2">ALL</button>
-                <button class="btn-2">JAVASCRIPT</button>
-                <button class="btn-2">ANGULAR</button>
+                <button class="btn-2" (click)="openProjects('all')">ALL</button>
+                <button class="btn-2" (click)="openProjects('JavaScript')">JAVASCRIPT</button>
+                <button class="btn-2" (click)="openProjects('Angular')">ANGULAR</button>
             </div>
-            <div class="all-references">
+            <div class="all-references" id="all-references" #allReferences>
                 <div class="single-reference">
                     <div class="img-div">
                         <img src="./../../assets/img/sharkie.png">
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-        <div class="right-div">
+        <div class="right-div" id="right-references" #rightReferences>
             <div class="single-reference">
                 <div class="img-div">
                     <img src="./../../assets/img/ringoffire.png">
