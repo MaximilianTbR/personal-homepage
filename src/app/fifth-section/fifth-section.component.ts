@@ -10,7 +10,7 @@ export class FifthSectionComponent implements OnInit {
 
   constructor(@Inject(DOCUMENT) document: Document) { }
 
-  @ViewChild('allReferences', { static: true }) allReferences!: ElementRef;
+  @ViewChild('allReferences') allReferences!: ElementRef;
   @ViewChild('rightReferences') rightReferences!: ElementRef;
 
   allProjects = [
@@ -54,8 +54,7 @@ export class FifthSectionComponent implements OnInit {
 
   openProjects(type: string) {
     if (type == 'all') {
-      //for (let i = 0; i < this.allProjects.length; i++) {
-      /*this.allReferences.nativeElement += `
+      this.allReferences.nativeElement += `
         <div class="single-reference">
             <div class="img-div">
                 <img src="./../../assets/img/sharkie.png">
@@ -71,8 +70,8 @@ export class FifthSectionComponent implements OnInit {
                 </div>
             </div>
         </div>
-        `;*/
-      document.getElementById('all-references')
+        `;
+      document.getElementById('all-references').innerHTML = `Hallo Welt`;
     } else if (type == 'JavaScript') {
       console.log('Javascript')
     } else if (type == 'Angular') {
