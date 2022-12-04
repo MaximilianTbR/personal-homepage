@@ -111,22 +111,14 @@ a {
     }
 }
 
-@media (max-width: 900px) and (min-width: 800px) {
-    .second-section-div {
-        height: 110vh;
-    }
-    .second-section-header {
-        width: 80vw !important;
-    }
-}
-
-@media (max-width: 800px) {
+@media (max-width: 1140px) {
     .second-section-header {
         color: white;
         font-family: 'PT Sans';
         font-size: 51px !important;
         font-weight: 800;
         margin-top: 15px;
+        width: 80vw !important;
     }
     .second-section-div {
         background-color: black;
@@ -135,7 +127,7 @@ a {
         align-items: start;
         flex-direction: column;
         width: 100%;
-        height: 130vh !important;
+        height: 115vh !important;
         padding-top: 0px !important;
         padding-left: 50px;
     }
@@ -145,26 +137,40 @@ a {
     .second-section-references-div {
         align-items: start;
     }
+    .second-section-single-reference-text {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .second-section-references-div {
+        width: 80vw;
+        max-width: 80vw !important;
+    }
 }
 
 @media (max-width: 535px) {
     .second-section-div {
-        height: 150vh !important;
+        height: 130vh !important;
     }
     .second-section-header {
         width: 80vw;
+    }
+    .second-section-references-div {
+        width: 80vw !important;
+        max-width: 80vw !important;
     }
 }
 
 @media (max-width: 350px) and (min-width: 330px) {
     .second-section-div {
-        height: 180vh !important;
+        height: 140vh !important;
     }
 }
 
 @media (max-width: 330px) {
     .second-section-div {
-        height: 180vh !important;
+        height: 145vh !important;
     }
 }
 

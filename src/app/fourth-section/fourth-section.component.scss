@@ -1,6 +1,8 @@
 .fourth-section-div {
-    width: calc(100vw);
+    width: calc(100vw - 100px);
     height: fit-content;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -95,6 +97,10 @@
     .fourth-section-div {
         height: 120vh;
     }
+    .fourth-section-left {
+        align-items: start !important;
+        justify-content: start !important;
+    }
     .fourth-section-subheader-text {
         width: 80vw;
     }
@@ -115,7 +121,7 @@
         margin-top: -50px;
     }
     .fourth-section-skill-presentation-div {
-        align-items: center;
+        align-items: start;
         margin-top: 50px;
     }
     .fourth-section-single-skill {
@@ -134,22 +140,31 @@
     }
 }
 
+@media (max-width: 800px) {
+    .fourth-section-left {
+        align-items: start;
+    }
+}
+
 @media (max-width: 535px) {
     .fourth-section-div {
-        height: 140vh !important;
+        height: 138vh !important;
         padding-left: 50px;
         padding-right: 50px;
+        padding-bottom: 75px;
     }
 }
 
 @media (max-width: 470px) {
     .fourth-section-div {
-        height: 150vh !important;
+        height: 138vh !important;
+        padding-bottom: 75px;
     }
 }
 
 @media (max-width: 370px) {
     .fourth-section-div {
-        height: 175vh !important;
+        height: 155vh !important;
+        padding-bottom: 75px;
     }
 }

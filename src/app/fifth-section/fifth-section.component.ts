@@ -50,14 +50,12 @@ export class FifthSectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.openProjects('all');
-    getElementById('allReferences') = '';
   }
 
   openProjects(type: string) {
     if (type == 'all') {
-      console.log('all');
       //for (let i = 0; i < this.allProjects.length; i++) {
-      this.allReferences.nativeElement += `
+      /*this.allReferences.nativeElement += `
         <div class="single-reference">
             <div class="img-div">
                 <img src="./../../assets/img/sharkie.png">
@@ -73,7 +71,8 @@ export class FifthSectionComponent implements OnInit {
                 </div>
             </div>
         </div>
-        `;
+        `;*/
+      document.getElementById('all-references')
     } else if (type == 'JavaScript') {
       console.log('Javascript')
     } else if (type == 'Angular') {
