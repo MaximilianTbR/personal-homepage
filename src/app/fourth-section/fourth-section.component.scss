@@ -33,7 +33,7 @@
 
 .fourth-section-header {
     color: white;
-    font-family: 'PT Sans';
+    font-family: Sen;
     font-size: 55px;
     margin-bottom: 25px;
     margin-top: 10px;
@@ -69,7 +69,7 @@
 
 .fourth-section-single-skill-header {
     color: white;
-    font-family: 'PT Sans';
+    font-family: Sen;
 }
 
 .fourth-section-single-skill-text {
@@ -80,17 +80,22 @@
 }
 
 .fourth-section-single-skill-img-ng {
-    img {
-        width: 59px;
-        height: 69px;
-    }
+    width: 69px;
+    height: 69px;
+    border-radius: 5px;
 }
 
 .fourth-section-single-skill-img-js {
-    img {
-        width: 69px;
-        height: 68px;
-    }
+    width: 59px;
+    height: 59px;
+    border-radius: 8px;
+}
+
+.fourth-section-single-skill-img-div {
+    height: 75px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 @media (max-width: 1200px) {

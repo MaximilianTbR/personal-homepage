@@ -13,6 +13,9 @@ import { SixthSectionComponent } from './sixth-section/sixth-section.component';
 import { SeventhSectionComponent } from './seventh-section/seventh-section.component';
 import { EigthSectionComponent } from './eigth-section/eigth-section.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SingleReferenceComponent } from './single-reference/single-reference.component';
+import { Bootstrap } from 'node_modules/bootstrap';
+
 
 
 @NgModule({
@@ -26,7 +29,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FifthSectionComponent,
     SixthSectionComponent,
     SeventhSectionComponent,
-    EigthSectionComponent
+    EigthSectionComponent,
+    SingleReferenceComponent
   ],
   imports: [
     BrowserModule,

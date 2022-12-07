@@ -9,78 +9,20 @@
             <button class="btn-2" (click)="openProjects('JavaScript')">JAVASCRIPT</button>
             <button class="btn-2" (click)="openProjects('Angular')">ANGULAR</button>
         </div>
-        <div class="all-references" #allReferences>
-            <div class="single-reference">
-                <div class="img-div">
-                    <img src="./../../assets/img/epl2.png">
-                </div>
-                <div class="text-div">
-                    <h3>El Pollo Loco</h3>
-                    <div class="simple-text">
-                        I worked on my JavaScript skills already for a while, when i started with this funny jump&run game. It is build with object-orientated Vanilla JS and is available both on the smartphone as well as in the browser. The goal is to kill the endboss at the
-                        end of the level.
-                    </div>
-                    <div class="href-btn">
-                        <img src="./../../assets/img/8.png">
-                    </div>
-                </div>
+        <!--<div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-primary">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+        </div>-->
+        <div class="all-references">
+            <div class="all-references" id="all-references">
+                <app-single-reference *ngFor="let project of this.allProjects; let i = index" [img]="this.allProjects[i]['img']" [title]="this.allProjects[i]['title']" [text]="this.allProjects[i]['text']" [btn]="this.allProjects[i]['btn']"></app-single-reference>
             </div>
-            <div class="single-reference">
-                <div class="img-div">
-                    <img src="./../../assets/img/join2.png">
-                </div>
-                <div class="text-div">
-                    <h3>Join</h3>
-                    <div class="simple-text">
-                        This is the first project I used a small PHP-based backend and it can save all the required data on an FTP server. This kanban-based productivity tool is built with Vanilla JS and is available both on the smartphone as well as in the browser.
-                    </div>
-                    <div class="href-btn">
-                        <img src="./../../assets/img/8.png">
-                    </div>
-                </div>
+            <div class="all-references" id="js-references">
+                <app-single-reference *ngFor="let project of this.allJavaScriptProjects; let i = index" [img]="this.allJavaScriptProjects[i]['img']" [title]="this.allJavaScriptProjects[i]['title']" [text]="this.allJavaScriptProjects[i]['text']" [btn]="this.allProjects[i]['btn']"></app-single-reference>
             </div>
-            <div class="single-reference">
-                <div class="img-div">
-                    <img src="./../../assets/img/ringoffire2.png">
-                </div>
-                <div class="text-div">
-                    <h3>Ring of Fire</h3>
-                    <div class="simple-text">
-                        This was my first project for which I used a smaller database, in this case, it was the firebase database from Google. I coded this popular drinking game with Angular 14.2.
-                    </div>
-                    <div class="href-btn">
-                        <img src="./../../assets/img/8.png">
-                    </div>
-                </div>
-            </div>
-            <div class="single-reference">
-                <div class="img-div">
-                    <img src="./../../assets/img/dogschoolcrm2.png">
-                </div>
-                <div class="text-div">
-                    <h3>CRM (Coming soon)</h3>
-                    <div class="simple-text">
-                        After completing Ring of Fire mentioned above I continued strengthening my Angular skills and ended up coding this small CRM system to build the main function of adding clients to the system.
-                    </div>
-                    <div class="href-btn">
-                        <img src="./../../assets/img/8.png">
-                    </div>
-                </div>
-            </div>
-            <div class="single-reference">
-                <div class="img-div">
-                    <img src="./../../assets/img/slack2.png">
-                </div>
-                <div class="text-div">
-                    <h3>Slack Clone (Coming soon)</h3>
-                    <div class="simple-text">
-                        This was my last project at the Developer Akademie and also my most challenging. I worked with three other fellow trainees of the Developer Akademie on this clone of the popular communication app for big organizations and it is based on Angular, Material
-                        Design, and Firebase.
-                    </div>
-                    <div class="href-btn">
-                        <img src="./../../assets/img/8.png">
-                    </div>
-                </div>
+            <div class="all-references" id="angular-references">
+                <app-single-reference *ngFor="let project of this.allAngularProjects; let i = index" [img]="this.allAngularProjects[i]['img']" [title]="this.allAngularProjects[i]['title']" [text]="this.allAngularProjects[i]['text']" [btn]="this.allProjects[i]['btn']"></app-single-reference>
             </div>
         </div>
     </div>

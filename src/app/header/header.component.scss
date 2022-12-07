@@ -60,10 +60,13 @@ $second-color: #181823;
 }
 
 .header-right-normal-text {
-    color: #BABABD;
-    font-size: 16px;
-    font-family: 'PT Sans';
-    cursor: pointer;
+    a {
+        color: #BABABD;
+        font-size: 16px;
+        font-family: 'PT Sans';
+        cursor: pointer;
+        text-decoration: none;
+    }
 }
 
 .header-right-btn {
@@ -78,6 +81,20 @@ $second-color: #181823;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    a {
+        color: white;
+        background-color: #5221E6;
+        font-weight: 800;
+        font-size: 12px;
+        width: 78px;
+        height: 60px;
+        font-family: 'PT Sans';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+    }
 }
 
 .responsove-menu-btn {
@@ -93,7 +110,7 @@ $second-color: #181823;
     z-index: 5;
     width: 100vw;
     height: fit-content;
-    background-color: black;
+    background-color: #181823;
     top: 70px;
     display: flex;
     flex-direction: column;
@@ -105,10 +122,13 @@ $second-color: #181823;
 }
 
 .open-menu-normal-text {
-    color: #BABABD;
-    font-size: 12px;
-    font-family: 'PT Sans';
-    cursor: pointer;
+    a {
+        color: #BABABD;
+        font-size: 12px;
+        font-family: 'PT Sans';
+        cursor: pointer;
+        text-decoration: none;
+    }
 }
 
 .single-href {
@@ -121,6 +141,14 @@ $second-color: #181823;
 }
 
 .open-menu-btn {
+    a {
+        color: white;
+        background-color: #5221E6;
+        font-weight: 800;
+        font-size: 12px;
+        font-family: 'PT Sans';
+        text-decoration: none;
+    }
     color: white;
     background-color: #5221E6;
     font-weight: 800;
@@ -133,6 +161,7 @@ $second-color: #181823;
     align-items: center;
     cursor: pointer;
     margin-bottom: 30px;
+    text-decoration: none;
 }
 
 .navbar-header {
@@ -232,6 +261,12 @@ $second-color: #181823;
 @media screen and (max-width: 1140px) and (min-width: 0px) {
     .responsive-menu-btn {
         display: unset;
+    }
+    .header-right-normal-text {
+        display: none !important;
+    }
+    .header-right-btn {
+        display: none !important;
     }
     .header-bar-1 {
         width: 88vw;
