@@ -16,13 +16,15 @@
         </div>-->
         <div class="all-references">
             <div class="all-references" id="all-references">
-                <app-single-reference *ngFor="let project of this.allProjects; let i = index" [img]="this.allProjects[i]['img']" [title]="this.allProjects[i]['title']" [text]="this.allProjects[i]['text']" [btn]="this.allProjects[i]['btn']"></app-single-reference>
+                <app-single-reference *ngFor="let project of this.allProjects; let i = index" [img]="this.allProjects[i]['img']" [title]="this.allProjects[i]['title']" [text]="this.allProjects[i]['text']" [btn]="this.allProjects[i]['btn']" [href]="this.allProjects[i]['href']"></app-single-reference>
             </div>
             <div class="all-references" id="js-references">
-                <app-single-reference *ngFor="let project of this.allJavaScriptProjects; let i = index" [img]="this.allJavaScriptProjects[i]['img']" [title]="this.allJavaScriptProjects[i]['title']" [text]="this.allJavaScriptProjects[i]['text']" [btn]="this.allProjects[i]['btn']"></app-single-reference>
+                <app-single-reference *ngFor="let project of this.allJavaScriptProjects; let i = index" [img]="this.allJavaScriptProjects[i]['img']" [title]="this.allJavaScriptProjects[i]['title']" [text]="this.allJavaScriptProjects[i]['text']" [btn]="this.allJavaScriptProjects[i]['btn']"
+                    [href]="this.allJavaScriptProjects[i]['href']"></app-single-reference>
             </div>
             <div class="all-references" id="angular-references">
-                <app-single-reference *ngFor="let project of this.allAngularProjects; let i = index" [img]="this.allAngularProjects[i]['img']" [title]="this.allAngularProjects[i]['title']" [text]="this.allAngularProjects[i]['text']" [btn]="this.allProjects[i]['btn']"></app-single-reference>
+                <app-single-reference *ngFor="let project of this.allAngularProjects; let i = index" [img]="this.allAngularProjects[i]['img']" [title]="this.allAngularProjects[i]['title']" [text]="this.allAngularProjects[i]['text']" [btn]="this.allAngularProjects[i]['btn']"
+                    [href]="this.allAngularProjects[i]['href']"></app-single-reference>
             </div>
         </div>
     </div>
