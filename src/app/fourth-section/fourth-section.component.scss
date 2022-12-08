@@ -1,8 +1,10 @@
 .fourth-section-div {
     width: calc(100vw - 100px);
-    height: fit-content;
+    height: fit-content !important;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -10,7 +12,6 @@
 }
 
 .fourth-section-inner-div {
-    margin-top: 100px;
     display: flex;
     width: 100%;
     max-width: 1140px;
@@ -40,6 +41,7 @@
     width: 100%;
     max-width: 1140px;
     text-align: start;
+    margin-top: 0px !important;
 }
 
 .fourth-section-subheader-text {
@@ -100,7 +102,7 @@
 
 @media (max-width: 1200px) {
     .fourth-section-div {
-        height: 120vh;
+        height: fit-content;
     }
     .fourth-section-left {
         align-items: start !important;
@@ -141,7 +143,7 @@
 
 @media (max-width: 935px) {
     .fourth-section-div {
-        height: 130vh !important;
+        height: fit-content !important;
     }
 }
 
@@ -153,23 +155,23 @@
 
 @media (max-width: 535px) {
     .fourth-section-div {
-        height: 138vh !important;
+        height: fit-content !important;
         padding-left: 50px;
         padding-right: 50px;
-        padding-bottom: 75px;
+        padding-bottom: 50px;
     }
 }
 
 @media (max-width: 470px) {
     .fourth-section-div {
-        height: 138vh !important;
-        padding-bottom: 75px;
+        height: fit-content !important;
+        padding-bottom: 50px;
     }
 }
 
 @media (max-width: 370px) {
     .fourth-section-div {
-        height: 155vh !important;
-        padding-bottom: 75px;
+        height: fit-content !important;
+        padding-bottom: 50px;
     }
 }

@@ -62,7 +62,15 @@ app-reference-component {
     cursor: pointer;
     img {
         width: 50px;
-        height: 50px;
+        height: 48px;
+        object-fit: cover;
+    }
+    p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    a {
+        background-color: #5221E6;
     }
 }
 
