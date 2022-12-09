@@ -1,42 +1,38 @@
 .third-section-div {
-    background-color: white;
     height: 600px;
     width: 100vw;
+    background-color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .third-section-left-div {
     width: 50vw;
-    height: 600px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    padding-left: 33px;
+    padding-left: 50px;
 }
 
 .third-section-right-div {
     width: 50vw;
-    height: 600px;
+    height: 100%;
     object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     img {
-        min-height: 500px;
-        min-width: 500px;
         height: 100%;
         width: 100%;
-        max-width: 600px;
-        max-height: 600px;
         object-fit: cover;
-        border-radius: 100%;
-        border: 1px solid black;
     }
 }
 
 .third-section-header {
-    font-family: Sen;
+    font-family: Sen, sans-serif;
     color: black;
     font-size: 55px;
     margin-bottom: 25px;
@@ -67,12 +63,12 @@
 @media (max-width: 1235px) and (min-width: 800px) {
     .third-section-right-div {
         img {
-            width: 500px !important;
-            height: 500px !important;
-            min-height: 500px !important;
-            min-width: 500px !important;
-            max-width: 500px !important;
-            max-height: 500px !important;
+            width: 100% !important;
+            height: 100% !important;
+            min-height: 100% !important;
+            min-width: 100% !important;
+            max-width: 100% !important;
+            max-height: 100% !important;
         }
     }
 }
@@ -80,12 +76,12 @@
 @media (max-width: 1000px) {
     .third-section-right-div {
         img {
-            width: 400px !important;
-            height: 400px !important;
-            min-height: 400px !important;
-            min-width: 400px !important;
-            max-width: 400px !important;
-            max-height: 400px !important;
+            width: 100% !important;
+            height: 100% !important;
+            min-height: 100% !important;
+            min-width: 100% !important;
+            max-width: 100% !important;
+            max-height: 100% !important;
         }
     }
 }
@@ -93,9 +89,8 @@
 @media (max-width: 800px) {
     .third-section-right-div {
         img {
-            width: 600px;
-            height: 600px;
-            margin-top: 50px;
+            width: 100%;
+            height: 100%;
         }
     }
     .third-section-div {
@@ -124,15 +119,15 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 100%) {
     .third-section-right-div {
         img {
             width: 100vw !important;
             max-width: 100vw !important;
             min-width: 100vw;
-            height: 400px;
-            min-height: 400px !important;
-            max-height: 400px !important;
+            height: 100%;
+            min-height: 100% !important;
+            max-height: 100% !important;
             margin-top: 100px;
             margin-top: 0px;
         }

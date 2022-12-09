@@ -53,7 +53,7 @@
 
 .header {
     color: white;
-    font-family: Sen;
+    font-family: Sen, sans-serif;
     font-size: 55px;
     margin-top: 15px;
     margin-bottom: 25px;
@@ -101,7 +101,7 @@
     align-items: start;
     flex-direction: column;
     h3 {
-        font-family: Sen;
+        font-family: Sen, sans-serif;
         padding-left: 30px;
         padding-right: 30px;
         width: fit-content;
@@ -160,7 +160,7 @@
         background-color: black;
         border: 1px solid #5221E6;
         color: white;
-        font-family: Sen;
+        font-family: Sen, sans-serif;
         &:hover {
             background-color: #5221E6 !important;
         }

@@ -40,7 +40,7 @@
 }
 
 .initals-div {
-    font-family: Sen;
+    font-family: Sen, sans-serif;
     text-decoration: none;
     font-weight: 600;
     color: white;
@@ -148,5 +148,17 @@
     .social-media-div {
         margin-bottom: 0px;
         margin-top: 0px;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        height: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }

@@ -35,7 +35,7 @@ app-reference-component {
     align-items: start;
     flex-direction: column;
     h3 {
-        font-family: Sen;
+        font-family: Sen, sans-serif;
         padding-left: 30px;
         padding-right: 30px;
         width: fit-content;
@@ -87,7 +87,7 @@ app-reference-component {
         background-color: black;
         border: 1px solid #5221E6;
         color: white;
-        font-family: Sen;
+        font-family: Sen, sans-serif;
         &:hover {
             background-color: #5221E6 !important;
         }

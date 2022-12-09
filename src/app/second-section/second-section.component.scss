@@ -29,7 +29,7 @@ a {
 
 .second-section-header {
     color: white;
-    font-family: Sen;
+    font-family: Sen, sans-serif;
     font-size: 76px;
     margin-top: 15px;
     width: 100%;
@@ -61,7 +61,7 @@ a {
     display: flex;
     align-items: center;
     height: 15px;
-    font-family: Sen;
+    font-family: Sen, sans-serif;
 }
 
 .dribbble-color {
@@ -104,7 +104,7 @@ a {
 @media (max-width: 1140px) {
     .second-section-header {
         color: white;
-        font-family: Sen;
+        font-family: Sen, sans-serif;
         font-size: 51px !important;
         margin-top: 15px;
         width: 80vw !important;
