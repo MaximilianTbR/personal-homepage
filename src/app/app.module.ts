@@ -15,6 +15,8 @@ import { EigthSectionComponent } from './eigth-section/eigth-section.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SingleReferenceComponent } from './single-reference/single-reference.component';
 import { Bootstrap } from 'node_modules/bootstrap';
+import { ImprintComponent } from './imprint/imprint.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component';
 
 
 
@@ -30,7 +32,9 @@ import { Bootstrap } from 'node_modules/bootstrap';
     SixthSectionComponent,
     SeventhSectionComponent,
     EigthSectionComponent,
-    SingleReferenceComponent
+    SingleReferenceComponent,
+    ImprintComponent,
+    DataProtectionComponent
   ],
   imports: [
     BrowserModule,

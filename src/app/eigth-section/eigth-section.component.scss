@@ -40,9 +40,9 @@
 }
 
 .initals-div {
-    font-family: "PT Sans";
-    font-weight: 800;
+    font-family: Sen;
     text-decoration: none;
+    font-weight: 600;
     color: white;
     font-size: 40px;
     cursor: pointer;
@@ -88,6 +88,21 @@
     text-decoration: none;
     color: #8491A0;
     font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.single-imprint {
+    a {
+        text-decoration: none;
+        font-family: "PT Sans";
+        text-decoration: none;
+        color: #8491A0;
+        font-size: 18px;
+    }
 }
 
 .right-inner-div {

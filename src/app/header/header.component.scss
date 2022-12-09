@@ -41,11 +41,13 @@ $second-color: #181823;
 }
 
 .header-left-initials {
-    font-family: 'PT Sans';
-    font-weight: 800;
-    text-decoration: none;
-    color: white;
-    font-size: 40px;
+    font-family: Sen;
+    font-weight: 600;
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 40px;
+    }
     cursor: pointer;
     text-align: start;
     display: flex;

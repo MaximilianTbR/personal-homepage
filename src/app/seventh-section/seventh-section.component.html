@@ -5,7 +5,7 @@
             <div class="simple-text simple-text-length">Now that you know a lot about me, let me know if you are interested to work with me.</div>
         </div>
         <div class="div-right">
-            <form type="submit" (submit)="sendMail()" nativeValidate #myForm>
+            <form type="submit" (ngSubmit)="sendMail()" nativeValidate #myForm>
                 <div class="input-div">
                     <label for="name">Name</label>
                     <div class="input-title">Name</div>
