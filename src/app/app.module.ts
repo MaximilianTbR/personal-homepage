@@ -17,6 +17,8 @@ import { SingleReferenceComponent } from './single-reference/single-reference.co
 import { Bootstrap } from 'node_modules/bootstrap';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 
@@ -40,7 +42,8 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

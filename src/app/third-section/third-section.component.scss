@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: fadeInOut 1s linear;
 }
 
 .third-section-left-div {
@@ -131,5 +132,17 @@
             margin-top: 100px;
             margin-top: 0px;
         }
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
