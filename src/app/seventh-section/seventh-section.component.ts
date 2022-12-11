@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import * as Aos from 'aos';
 
 @Component({
   selector: 'app-seventh-section',
@@ -14,7 +15,7 @@ export class SeventhSectionComponent implements OnInit {
 
 
   ngOnInit(): void {
-
+    Aos.init();
   }
 
   async sendMail() {

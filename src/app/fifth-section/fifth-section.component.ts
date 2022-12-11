@@ -1,5 +1,6 @@
 import { Component, ElementRef, Inject, OnInit, ViewChild } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
+import * as Aos from 'aos';
 
 @Component({
   selector: 'app-fifth-section',
@@ -111,6 +112,7 @@ export class FifthSectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.openProjects('all');
+    Aos.init();
   }
 
   type: string;
