@@ -22,25 +22,51 @@ export class SeventhSectionComponent implements OnInit {
     let nameField = this.nameField.nativeElement;
     let emailField = this.mailField.nativeElement;
     let messageField = this.messageField.nativeElement;
-    if (nameField.length > 1 && emailField.length > 1 && messageField.length > 1) {
-      nameField.disabled = true;
-      emailField.disabled = true;
-      messageField.disabled = true;
-      // Animation
-      let fd = new FormData();
-      fd.append('name', nameField.value);
-      fd.append('email', emailField.value);
-      fd.append('message', messageField.value);
-      await fetch('https://maximilian-tauber.developerakademie.net/send_mail/send_mail.php', {
-        method: 'POST',
-        body: fd
-      });
-      // show text: message sent!
-      nameField.disabled = false;
-      emailField.disabled = false;
-      messageField.disabled = false;
+    console.log('message sent!')
+    nameField.disabled = true;
+    emailField.disabled = true;
+    messageField.disabled = true;
+    // Animation
+    let fd = new FormData();
+    fd.append('name', nameField.value);
+    fd.append('email', emailField.value);
+    fd.append('message', messageField.value);
+    await fetch('https://maximilian-tauber.developerakademie.net/send_mail/send_mail.php', {
+      method: 'POST',
+      body: fd
+    });
+    // show text: message sent!
+    console.log('message sent!')
+    nameField.disabled = false;
+    emailField.disabled = false;
+    messageField.disabled = false;
+  }
+
+  failedTestValidation() {
+    if (this.nameField.nativeElement.value >= 1) {
+      // mail code 
     } else {
-      console.log('something is missing')
+      this.nameFieldValidation();
+      this.mailFieldValidation();
+      this.textFieldValidation();
+    }
+  }
+
+  nameFieldValidation() {
+    if (this.nameField.nativeElement.value == 0) {
+      console.log('namefIeld is missing');
+    }
+  }
+
+  mailFieldValidation() {
+    if (this.mailField.nativeElement.value == 0) {
+      console.log('Mailfield is missing');
+    }
+  }
+
+  textFieldValidation() {
+    if (this.messageField.nativeElement.value == 0) {
+      console.log('textfield is missing');
     }
   }
 }
