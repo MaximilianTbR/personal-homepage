@@ -19,27 +19,28 @@ export class SeventhSectionComponent implements OnInit {
   }
 
   async sendMail() {
-    console.log('sending mail!', this.myForm);
     let nameField = this.nameField.nativeElement;
     let emailField = this.mailField.nativeElement;
     let messageField = this.messageField.nativeElement;
-    nameField.disabled = true;
-    emailField.disabled = true;
-    messageField.disabled = true;
-    // Animation
-    let fd = new FormData();
-    fd.append('name', nameField.value);
-    fd.append('email', emailField.value);
-    fd.append('message', messageField.value);
-
-
-    await fetch('https://maximilian-tauber.developerakademie.net/send_mail/send_mail.php', {
-      method: 'POST',
-      body: fd
-    });
-    // show text: message sent!
-    nameField.disabled = false;
-    emailField.disabled = false;
-    messageField.disabled = false;
+    if (nameField.length > 1 && emailField.length > 1 && messageField.length > 1) {
+      nameField.disabled = true;
+      emailField.disabled = true;
+      messageField.disabled = true;
+      // Animation
+      let fd = new FormData();
+      fd.append('name', nameField.value);
+      fd.append('email', emailField.value);
+      fd.append('message', messageField.value);
+      await fetch('https://maximilian-tauber.developerakademie.net/send_mail/send_mail.php', {
+        method: 'POST',
+        body: fd
+      });
+      // show text: message sent!
+      nameField.disabled = false;
+      emailField.disabled = false;
+      messageField.disabled = false;
+    } else {
+      console.log('something is missing')
+    }
   }
 }
