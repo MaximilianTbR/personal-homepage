@@ -1,26 +1,45 @@
-<div class="main-div" id="seventh-section" data-aos="flip-up" data-aos-anchor="#example-anchor" data-aos-offset="5000" data-aos-duration="500">
-    <div class="inner-div">
-        <div class="div-left">
-            <h2>Let's talk business</h2>
-            <div class="simple-text simple-text-length">Now that you know a lot about me, let me know if you are interested to work with me.</div>
-        </div>
-        <div class="div-right">
-            <form type="submit" (ngSubmit)="sendMail()" nativeValidate #myForm>
-                <div class="input-div">
-                    <label for="name">Name</label>
-                    <div class="input-title">Name</div>
-                    <input required type="text" id="name" name="name" #nameField>
-                </div>
-                <div class="input-div">
-                    <div class="input-title">Email</div>
-                    <input required name="mail" #mailField>
-                </div>
-                <div class="input-div">
-                    <div class="input-title">Message</div>
-                    <textarea required name="message" #messageField></textarea>
-                </div>
-                <button type="submit" class="input-btn" #sendBtn>LET'S GET STARTED</button>
-            </form>
-        </div>
+<div
+  class="main-div"
+  id="seventh-section"
+  data-aos="flip-up"
+  data-aos-anchor="#example-anchor"
+  data-aos-offset="5000"
+  data-aos-duration="500"
+>
+  <div class="inner-div">
+    <div class="div-left">
+      <h2>Let's talk business</h2>
+      <div class="simple-text simple-text-length">
+        Now that you know a lot about me, let me know if you are interested to
+        work with me.
+      </div>
     </div>
+    <div class="div-right">
+      <form type="submit" (ngSubmit)="sendMail()" nativeValidate #myForm>
+        <div class="input-div">
+          <label for="name">Name</label>
+          <div class="input-title">Name</div>
+          <input required type="text" id="name" name="name" #nameField />
+        </div>
+        <div class="input-div">
+          <div class="input-title">Email</div>
+          <input required name="mail" #mailField />
+        </div>
+        <div class="input-div">
+          <div class="input-title">Message</div>
+          <textarea
+            required
+            name="message"
+            #messageField
+            [placeholder]="
+              'And please leave your phone number in the message, so we can get in contact immediately :)'
+            "
+          ></textarea>
+        </div>
+        <button type="submit" class="input-btn" #sendBtn>
+          LET'S GET STARTED
+        </button>
+      </form>
+    </div>
+  </div>
 </div>

@@ -1,31 +1,59 @@
-<div class="fifth-section-div" id="fifth-section" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
-    <div class="inner-div">
-        <div class="header-div">
-            <div class="subheader">MY PROJECTS</div>
-            <h2 class="header">Work that I've done for the past years</h2>
-        </div>
-        <div class="btns-div">
-            <button class="btn-2" (click)="openProjects('all')">ALL</button>
-            <button class="btn-2" (click)="openProjects('JavaScript')">JAVASCRIPT</button>
-            <button class="btn-2" (click)="openProjects('Angular')">ANGULAR</button>
-        </div>
-        <!--<div class="btn-group" role="group" aria-label="Basic example">
+<div
+  class="fifth-section-div"
+  id="fifth-section"
+  data-aos="fade-left"
+  data-aos-anchor="#example-anchor"
+  data-aos-offset="500"
+  data-aos-duration="500"
+>
+  <div class="inner-div">
+    <div class="header-div">
+      <div class="subheader">MY PROJECTS</div>
+      <h2 class="header">Work that I've done for the past years</h2>
+    </div>
+    <div class="btns-div">
+      <button class="btn-2" (click)="openProjects('all')">ALL</button>
+      <button class="btn-2" (click)="openProjects('JavaScript')">
+        JAVASCRIPT
+      </button>
+      <button class="btn-2" (click)="openProjects('Angular')">ANGULAR</button>
+    </div>
+    <!--<div class="btn-group" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-primary">Left</button>
             <button type="button" class="btn btn-primary">Middle</button>
             <button type="button" class="btn btn-primary">Right</button>
         </div>-->
-        <div class="all-references">
-            <div class="all-references" id="all-references">
-                <app-single-reference *ngFor="let project of this.allProjects; let i = index" [img]="this.allProjects[i]['img']" [title]="this.allProjects[i]['title']" [text]="this.allProjects[i]['text']" [btn]="this.allProjects[i]['btn']" [href]="this.allProjects[i]['href']"></app-single-reference>
-            </div>
-            <div class="all-references" id="js-references">
-                <app-single-reference *ngFor="let project of this.allJavaScriptProjects; let i = index" [img]="this.allJavaScriptProjects[i]['img']" [title]="this.allJavaScriptProjects[i]['title']" [text]="this.allJavaScriptProjects[i]['text']" [btn]="this.allJavaScriptProjects[i]['btn']"
-                    [href]="this.allJavaScriptProjects[i]['href']"></app-single-reference>
-            </div>
-            <div class="all-references" id="angular-references">
-                <app-single-reference *ngFor="let project of this.allAngularProjects; let i = index" [img]="this.allAngularProjects[i]['img']" [title]="this.allAngularProjects[i]['title']" [text]="this.allAngularProjects[i]['text']" [btn]="this.allAngularProjects[i]['btn']"
-                    [href]="this.allAngularProjects[i]['href']"></app-single-reference>
-            </div>
-        </div>
+    <div class="all-references">
+      <div class="all-references" id="all-references">
+        <app-single-reference
+          *ngFor="let project of this.allProjects; let i = index"
+          [img]="this.allProjects[i]['img']"
+          [title]="this.allProjects[i]['title']"
+          [text]="this.allProjects[i]['text']"
+          [btn]="this.allProjects[i]['btn']"
+          [href]="this.allProjects[i]['href']"
+        ></app-single-reference>
+      </div>
+      <div class="all-references" id="js-references">
+        <app-single-reference
+          *ngFor="let project of this.allJavaScriptProjects; let i = index"
+          [img]="this.allJavaScriptProjects[i]['img']"
+          [title]="this.allJavaScriptProjects[i]['title']"
+          [text]="this.allJavaScriptProjects[i]['text']"
+          [btn]="this.allJavaScriptProjects[i]['btn']"
+          [href]="this.allJavaScriptProjects[i]['href']"
+        ></app-single-reference>
+      </div>
+      <div class="all-references" id="angular-references">
+        <app-single-reference
+          *ngFor="let project of this.allAngularProjects; let i = index"
+          [img]="this.allAngularProjects[i]['img']"
+          [title]="this.allAngularProjects[i]['title']"
+          [text]="this.allAngularProjects[i]['text']"
+          [btn]="this.allAngularProjects[i]['btn']"
+          [href]="this.allAngularProjects[i]['href']"
+        ></app-single-reference>
+      </div>
     </div>
+  </div>
 </div>
