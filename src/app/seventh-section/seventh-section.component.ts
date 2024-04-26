@@ -31,7 +31,7 @@ export class SeventhSectionComponent implements OnInit {
     fd.append('name', nameField.value);
     fd.append('email', emailField.value);
     fd.append('message', messageField.value);
-    await fetch('https://maximilian-tauber.developerakademie.net/send_mail/send_mail.php', {
+    await fetch('https://maximiliantauber.com/api/send_mail.php', {
       method: 'POST',
       body: fd
     });
